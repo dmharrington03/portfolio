@@ -25,13 +25,15 @@ body, h1, h2, h3, h4, h5, h6 p, a {
 }
 
 h2 {
+  font-size: 26px;
   color: #146490;
   display: inline;
 }
-/* 
-section {
-  padding: 0 1.5em 0 1.5em;
-} */
+
+p {
+  font-size: 20px;
+  text-align: justify;
+}
 .hash {
   position: absolute;
   display: block;
@@ -45,4 +47,12 @@ section {
   width: inherit;
   left: 50%;
   padding: 0;
+}
+
+p.caption {
+  font-size: 16px;
+}
+
+img.medium-caption {
+  width: 275px;
 }
