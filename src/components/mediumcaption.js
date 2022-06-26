@@ -8,11 +8,17 @@ const MediumCaption = ({source, title, caption}) => {
 
 
     return (
-        <div>
+        <div className="uk-height-expand">
               <p className="caption">
-                <img src={ source } className="uk-float-left uk-margin-right uk-margin-bottom medium-caption"/>
-                <h4 className="uk-margin-small-bottom uk-margin-top"><i>{title}</i></h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                <div className="uk-flex-middle uk-grid" data-uk-grid>
+                  <div className="uk-width-1-3@m uk-flex-first"><img src={ source } className="medium-caption"/></div>
+
+                  <div className="uk-width-2-3@m">
+                    <h4 className="uk-margin-small-bottom uk-margin-top"><i>{title}</i></h4>
+                    <section dangerouslySetInnerHTML={{ __html: caption }}></section>
+                  </div>
+                </div>
               </p>
         </div>
     );
