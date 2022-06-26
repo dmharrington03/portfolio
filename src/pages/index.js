@@ -22,7 +22,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <div>
       <Header />
-      <div className="uk-container uk-width-3-4 uk-width-1-2@l">
+      <div className="uk-container uk-width-3-4 uk-width-3-5@l">
         <section>
           <div className="maintext uk-margin">
             <h2 className="hash">#</h2>
@@ -39,6 +39,12 @@ const BlogIndex = ({ data, location }) => {
             {/* Medium Caption Section */}
             <h3 className="uk-margin">DATA SCIENCE</h3>
             <MediumSection />
+
+            {/* Text Section */}
+            <h3 className="uk-margin">RESEARCH</h3>
+            <h4 className="uk-margin-remove-bottom"><i>RA, Peter Love Quantum Information Group, Tufts University</i></h4>
+            <p className="uk-margin-remove-top uk-margin-large-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+
 
             {/* Small Section */}
             <h3 className="uk-margin">SIMULATIONS</h3>

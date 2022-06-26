@@ -62,13 +62,24 @@ p.caption {
   width: 200px;
   height: 150px;
   padding: 10px;
+  scroll-snap-align: center;
+}
+/* --------- UIKit Breakpoints ------- */
+/* $breakpoint-small: 640px !default;
+$breakpoint-medium: 960px !default;
+$breakpoint-large: 1200px !default;
+$breakpoint-xlarge: 1600px !default; */
+
+@media screen and (min-width: 640px) {
+  .scroll-item {
+    scroll-snap-align: start;
+  }
 }
 
 .scroll-wrapper {
   overflow-x: scroll;
   scroll-behavior: smooth;
   position: relative;
-  /* border: 1px solid black; */
 }
 
 .scroll-wrapper::-webkit-scrollbar {
@@ -78,6 +89,7 @@ p.caption {
 .scroll-wrapper {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  scroll-snap-type: x proximity;
 }
 
 .move-right {
@@ -87,6 +99,7 @@ p.caption {
   top: 50%;
   right: -50px;
 }
+
 .move-left {
   color: black;
   transform: translateY(-50%);
