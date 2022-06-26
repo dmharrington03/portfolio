@@ -34,7 +34,7 @@ const BlogIndex = ({ data, location }) => {
           <div className="maintext uk-margin">
             <h2 className="hash">#</h2>
             <h2>MY PROJECTS</h2>
-            <h3 className="uk-margin">SOFTWARE</h3>
+            <h3 className="uk-margin">DATA SCIENCE</h3>
 
             <div className="uk-flex uk-flex-column">
               {posts.map((post) => {
@@ -43,8 +43,8 @@ const BlogIndex = ({ data, location }) => {
                 return (
                   <MediumCaption 
                   source={ imgMatch ? imgMatch.publicURL : "" }
-                  title={ title }
-                  body={ "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"}
+                  title={ post.frontmatter.description || 'error' }
+                  caption={ post.html }
                   />)
                 })
               }
@@ -66,11 +66,12 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: {frontmatter: {title: {glob: "display*"}}}) {
+    allMarkdownRemark(filter: {frontmatter: {title: {glob: "M-**"}}}) {
       nodes {
         id
         frontmatter {
           title
+          description
         }
         html
         fields {
@@ -78,7 +79,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allFile(filter: {relativeDirectory: {glob: "display*"}, extension: {in: ["jpg", "png"]}}) {
+    allFile(filter: {relativeDirectory: {glob: "project*"}, extension: {in: ["jpg", "png"]}}) {
       nodes {
         publicURL
         name
