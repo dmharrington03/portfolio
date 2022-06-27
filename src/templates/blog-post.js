@@ -33,7 +33,7 @@ const BlogPostTemplate = ({ data, location }) => {
         </article>
 
         <nav className="blog-post-nav">
-          <ul className="post-nav">
+          <ul className="post-nav uk-flex uk-flex-between uk-flex-center uk-padding-remove">
             <li>
               {previous && (
                 <a href={previous.fields.slug.replace(/\s+/g, '')} rel="prev"
@@ -54,7 +54,11 @@ const BlogPostTemplate = ({ data, location }) => {
             </li>
           </ul>
         </nav>
+
       </div>
+      <footer className="post-footer uk-height-small uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+          <h5 className="uk-margin-remove">DANIEL HARRINGTON</h5>
+      </footer>
 
     </div>
   )

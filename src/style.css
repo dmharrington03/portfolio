@@ -150,3 +150,11 @@ $breakpoint-xlarge: 1600px !default; */
 .math, .math-display {
   overflow: scroll;
 }
+
+.post-nav {
+  list-style-type: none;
+}
+
+.post-footer {
+  background-color: #D9D9D9;
+}
