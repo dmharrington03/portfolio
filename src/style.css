@@ -107,3 +107,28 @@ $breakpoint-xlarge: 1600px !default; */
   top: 50%;
   left: -80px;
 }
+
+.page-link:hover {
+  text-decoration: none;
+}
+
+.banner-thin {
+  background-color: #D9D9D9;
+  height: 45px;
+}
+
+.home-link {
+  text-decoration: underline;
+  color: black;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.home-link:hover {
+  color: black;
+}
+
+.git-button {
+  text-transform: none;
+}
