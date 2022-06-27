@@ -1,66 +1,62 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import ArticleHeader from "../components/articleheader"
+import UIkit from "uikit"
+import Icons from "uikit/dist/js/uikit-icons"
+import "katex/dist/katex.min.css"
+import katex from "katex"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
+  UIkit.use(Icons)
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-        </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
-        <hr />
-        <footer>
-          <Bio />
-        </footer>
-      </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
-    </Layout>
+    <div>
+      
+      <ArticleHeader post={post} imgURL={data.file ? data.file.publicURL : ""}/>
+
+      <div className="uk-container uk-margin-top">
+        <article
+          className="blog-post"
+          itemScope
+          itemType="http://schema.org/Article">
+          
+          
+          <section
+            dangerouslySetInnerHTML={{ __html: post.html }}
+            itemProp="articleBody"
+          />
+          <hr />
+        </article>
+
+        <nav className="blog-post-nav">
+          <ul className="post-nav">
+            <li>
+              {previous && (
+                <a href={previous.fields.slug.replace(/\s+/g, '')} rel="prev"
+                  className="uk-button uk-button-default uk-margin=bottom"
+                  id="coolButton">
+                  ← {previous.frontmatter.title}
+                </a>
+              )}
+            </li>
+            <li>
+              {next && (
+                <a href={next.fields.slug.replace(/\s+/g, '')} rel="next"
+                  className="uk-button uk-button-default uk-margin=bottom"
+                  id="coolButton">
+                  {next.frontmatter.title} →
+                </a>
+              )}
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
   )
 }
 
@@ -69,6 +65,7 @@ export default BlogPostTemplate
 export const pageQuery = graphql`
   query BlogPostBySlug(
     $id: String!
+    $title: String
     $previousPostId: String
     $nextPostId: String
   ) {
@@ -86,6 +83,9 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
       }
+    }
+    file(name: {eq: $title }) {
+      publicURL
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
       fields {
