@@ -70,7 +70,6 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-content/
 CAD/
 displays/
 physics.jpg
