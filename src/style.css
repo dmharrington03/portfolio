@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
 
+html, body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 body, h1, h2, h3, h4, h5, h6 p, a {
   font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif;
 }
@@ -64,6 +70,10 @@ p.caption {
   padding: 10px;
   scroll-snap-align: center;
 }
+
+.article-bg {
+  height: 300px;
+}
 /* --------- UIKit Breakpoints ------- */
 /* $breakpoint-small: 640px !default;
 $breakpoint-medium: 960px !default;
@@ -73,6 +83,10 @@ $breakpoint-xlarge: 1600px !default; */
 @media screen and (min-width: 640px) {
   .scroll-item {
     scroll-snap-align: start;
+  }
+
+  .article-bg {
+    height: 450px;
   }
 }
 
@@ -131,4 +145,8 @@ $breakpoint-xlarge: 1600px !default; */
 
 .git-button {
   text-transform: none;
+}
+
+.math, .math-display {
+  overflow: scroll;
 }
