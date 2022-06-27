@@ -17,6 +17,16 @@ const SmallSection = () => {
               publicURL
             }
           }
+          allMarkdownRemark(filter: {fileAbsolutePath: {glob: "**/blog/**"}}) {
+            nodes {
+              frontmatter {
+                title
+              }
+              fields {
+                slug
+              }
+            }
+          }
         }
       `}
       render={(data) => (
@@ -27,6 +37,8 @@ const SmallSection = () => {
             <div className="scroll">
               {data.allFile.nodes.map((image, index) => {
                 
+                const postMatch = data.allMarkdownRemark.nodes.find((node) => image.name === node.frontmatter.title)
+                
                 let id;
                 if (index === 0)
                   id = 'first'
@@ -35,8 +47,11 @@ const SmallSection = () => {
                 
                 return (
                 <div className="scroll-item" id={id}>
-                  <img src={image.publicURL} alt={image.name}/>
-                  <h5 className="uk-margin-small">{image.name}</h5>
+                  {/* Remove whitespace from slug */}
+                  <a className="page-link" href={ postMatch ? postMatch.fields.slug.replace(/\s+/g, '') : ''}>
+                    <img src={image.publicURL} alt={image.name}/>
+                    <h5 className="uk-margin-small">{image.name}</h5>
+                  </a>
                 </div>
                 )
 
