@@ -17,7 +17,7 @@ const MediumCaption = ({source, title, caption, invert}) => {
                   </div>
 
                   <div className={"uk-width-expand " + invertedClass}>
-                    <h4 className="uk-margin-small-bottom"><i>{title}</i></h4>
+                    <h4 className="uk-margin-small-bottom"><b><i>{title}</i></b></h4>
                     <section dangerouslySetInnerHTML={{ __html: caption }}></section>
                   </div>
                 </div>
