@@ -4,6 +4,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
+  /* background: #f9f8f4; */
 }
 
 body, h1, h2, h3, h4, h5, h6 p, a {
@@ -157,4 +158,12 @@ $breakpoint-xlarge: 1600px !default; */
 
 .post-footer {
   background-color: #D9D9D9;
+}
+
+/* .sq-img {
+  border: 1px solid black;
+} */
+
+section.sq-caption p {
+  font-size: 16px;
 }
