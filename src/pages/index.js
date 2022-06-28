@@ -6,6 +6,7 @@ import Header from "../components/header"
 import SmallSection from "../components/smallsection"
 import MediumCaption from "../components/mediumcaption"
 import MediumSection from "../components/mediumsection"
+import SquareSection from "../components/squaresection"
 
 import UIkit from "uikit";
 import Icons from 'uikit/dist/js/uikit-icons';
@@ -49,11 +50,18 @@ const BlogIndex = ({ data, location }) => {
             {/* Small Section */}
             <h3 className="uk-margin">SIMULATIONS</h3>
             <SmallSection />
+            <br />
+            {/* Square Section */}
+            <h3 className="uk-margin">WEB DEVELOPMENT</h3>
+            <SquareSection/>
           </div>
         </section>
       
       
       </div>
+      <footer className="post-footer uk-height-small uk-flex uk-flex-center uk-flex-middle">
+        <h4 className="uk-margin-remove">DANIEL HARRINGTON</h4>
+      </footer>
     </div>
   )
 }
