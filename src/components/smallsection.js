@@ -49,7 +49,7 @@ const SmallSection = () => {
                 <div className="scroll-item" id={id}>
                   {/* Remove whitespace from slug */}
                   <a className="page-link" href={ postMatch ? postMatch.fields.slug.replace(/\s+/g, '') : ''}>
-                    <img src={image.publicURL} alt={image.name}/>
+                    <img src={image.publicURL} className="click-img" alt={image.name}/>
                     <h5 className="uk-margin-small">{image.name}</h5>
                   </a>
                 </div>

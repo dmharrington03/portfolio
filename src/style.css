@@ -163,3 +163,11 @@ $breakpoint-xlarge: 1600px !default; */
 section.sq-caption p {
   font-size: 16px;
 }
+
+.click-img {
+  transition: filter .1s ease-in-out;
+}
+
+.click-img:hover {
+  filter: brightness(.9);
+}
