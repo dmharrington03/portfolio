@@ -12,6 +12,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
   UIkit.use(Icons)
+  
 
   return (
     <div>
@@ -26,8 +27,8 @@ const BlogPostTemplate = ({ data, location }) => {
           
           
           <section
-            dangerouslySetInnerHTML={{ __html: post.html }}
-            itemProp="articleBody"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+          itemProp="articleBody"
           />
           <hr />
         </article>
