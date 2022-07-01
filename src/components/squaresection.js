@@ -27,7 +27,7 @@ const SquareSection = () => {
         }
       `}
       render={(data) => (
-        <div className="uk-grid uk-child-width-1-3" data-uk-grd>
+        <div className="uk-grid uk-child-width-1-3@s" data-uk-grd>
           {data.allMarkdownRemark.nodes.map((post) => {
             const imgMatch = data.allFile.nodes.find((node) => post.frontmatter.description === node.name);
             return (
