@@ -13,7 +13,7 @@ const MediumCaption = ({source, title, caption, invert}) => {
 
                 <div className="uk-flex-middle uk-grid uk-margin-large" data-uk-grid>
                   <div className="uk-width-1-2@m">
-                    <img src={ source } className="medium-caption" data-uk-img="loading: eager"/>
+                    <img src={source} alt={title} className="medium-caption" data-uk-img="loading: eager"/>
                   </div>
 
                   <div className={"uk-width-expand " + invertedClass}>
