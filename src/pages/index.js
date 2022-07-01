@@ -4,9 +4,9 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Header from "../components/header"
 import SmallSection from "../components/smallsection"
-import MediumCaption from "../components/mediumcaption"
 import MediumSection from "../components/mediumsection"
 import SquareSection from "../components/squaresection"
+import LargeSection from "../components/largesection"
 
 import UIkit from "uikit";
 import Icons from 'uikit/dist/js/uikit-icons';
@@ -54,6 +54,10 @@ const BlogIndex = ({ data, location }) => {
             {/* Square Section */}
             <h3 className="uk-margin">WEB DEVELOPMENT</h3>
             <SquareSection/>
+
+            {/* Large Section */}
+            <h3 className="uk-margin">PHYSICS</h3>
+            <LargeSection />
           </div>
         </section>
       
