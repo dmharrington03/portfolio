@@ -129,7 +129,7 @@ $breakpoint-xlarge: 1600px !default; */
 
 .banner-thin {
   background-color: #D9D9D9;
-  height: 45px;
+  height: 25px;
 }
 
 .home-link {
@@ -170,4 +170,9 @@ section.sq-caption p {
 
 .click-img:hover {
   filter: brightness(.9);
+  cursor: pointer;
+}
+
+.uk-modal-dialog h2, em {
+  color: black;
 }
