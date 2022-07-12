@@ -56,7 +56,7 @@ const BlogIndex = ({ data, location }) => {
             <SquareSection/>
 
             {/* Large Section */}
-            <h3 className="uk-margin">PHYSICS</h3>
+            <h3 className="uk-margin-top-large">PHYSICS</h3>
             <LargeSection />
           </div>
         </section>
