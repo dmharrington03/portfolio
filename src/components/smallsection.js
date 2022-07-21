@@ -7,6 +7,21 @@ import UIkit from "uikit";
 
 const SmallSection = () => {
 
+  const scrollRight = () => {
+    try {
+      document.getElementById("scroll").scrollLeft += 220 * 1;
+    } catch(err) {
+      console.log(err)
+    }
+  }
+  const scrollLeft = () => {
+    try {
+      document.getElementById("scroll").scrollLeft -= 220 * 1;
+    } catch(err) {
+      console.log(err)
+    }
+  }
+
   return (
     <StaticQuery
       query={graphql`
@@ -32,7 +47,7 @@ const SmallSection = () => {
       render={(data) => (
 
         <div className="uk-position-relative">
-          <div className="scroll-wrapper">
+          <div className="scroll-wrapper" id="scroll">
 
             <div className="scroll">
               {data.allFile.nodes.map((image, index) => {
@@ -61,10 +76,13 @@ const SmallSection = () => {
 
           </div>
 
-          <a className="uk-overlay uk-position-center-left move-left"
-            href="#first" uk-scroll><span uk-icon="icon: chevron-left; ratio: 3"></span></a>
-          <a className="move-right"
-            href="#last" uk-scroll><span uk-icon="icon: chevron-right; ratio: 3"></span></a>
+          <div className="end-overlay uk-overlay uk-position-top-right">
+
+          </div>
+          <button className="uk-overlay uk-position-center-left move-left" onClick={scrollLeft}
+            href="" uk-scroll><span uk-icon="icon: chevron-left; ratio: 3"></span></button>
+          <button className="move-right" onClick={scrollRight}
+            href="" uk-scroll><span uk-icon="icon: chevron-right; ratio: 3"></span></button>
         </div>
       )}/>
     )
