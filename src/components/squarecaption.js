@@ -5,7 +5,7 @@ const SquareCaption = ({imgURL, title, description}) => {
 
   return (
     <div>
-      <div className="uk-flex uk-flex-column uk-flex-between uk-width-1-1">
+      <div className="uk-flex uk-flex-column uk-flex-between uk-width-1-1 pointer">
         <div data-uk-toggle={"target: " + '#' + title.replace(/\s+/g, '')}>
           <img src={imgURL} alt={title} className="click-img uk-width-5-6 uk-width-1-1@s"/>
         </div>
