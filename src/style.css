@@ -64,6 +64,10 @@ p.caption {
   display: flex;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .end-overlay {
   background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(20, 20, 20, .3));
   height: 100px;
