@@ -69,7 +69,9 @@ p.caption {
 }
 
 .end-overlay {
-  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(20, 20, 20, .3));
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0, 0, 0, .4));
+  visibility: hidden; /* Hide on mobile */
+  width: 100px;
   height: 100px;
   margin-top: 10px;
 }
@@ -99,6 +101,10 @@ $breakpoint-xlarge: 1600px !default; */
 @media screen and (min-width: 640px) {
   .scroll-item {
     scroll-snap-align: start;
+  }
+
+  .end-overlay {
+    visibility: visible;
   }
 
   .article-bg {
