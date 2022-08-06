@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Header from "../components/header"
 import SmallSection from "../components/smallsection"
+import SmallColumnSection from "../components/smallcolumnsection"
 import MediumSection from "../components/mediumsection"
 import SquareSection from "../components/squaresection"
 import LargeSection from "../components/largesection"
@@ -50,6 +51,12 @@ const BlogIndex = ({ data, location }) => {
             <h3 className="uk-margin">C++/SFML SIMULATIONS</h3>
             <SmallSection />
             <br />
+
+            <h3 className="uk-margin">p5 SIMULATIONS</h3>
+            <SmallColumnSection />
+            <br />
+
+
             {/* Medium Caption Section */}
             <h3 className="uk-margin">DATA SCIENCE</h3>
             <MediumSection />
