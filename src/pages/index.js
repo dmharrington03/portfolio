@@ -7,18 +7,16 @@ import SmallSection from "../components/smallsection"
 import MediumSection from "../components/mediumsection"
 import SquareSection from "../components/squaresection"
 import LargeSection from "../components/largesection"
+import Contact from "../components/contact"
 
 import UIkit from "uikit";
 import Icons from 'uikit/dist/js/uikit-icons';
 
 const BlogIndex = ({ data, location }) => {
-  // const siteTitle = data.site.siteMetadata?.title || `Title`
-  // const posts = data.allMarkdownRemark.nodes
-  // const images = data.allFile.nodes
 
-  const bio = "Hello! I am an undergraduate physics student at Tufts University. I am interested in learning about condensed matter and high energy physics, specifically the design and engineering of experimental equipment."
+  const bio = "Hello! I\'m Daniel, an undergraduate physics student at Tufts University. I am interested in pursuing condensed matter physics, specifically quantum computing theory and development. I also plan to minor in computer science and mathematics. My goal is to use computing to supplement experimental and theoretical techniques to solve novel problems in physics. Outside of science, I love jazz and weightlifting. Read more about my work here or on my Github."
 
-  const research = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  const research = "Currently, I am looking for a new assistantship/internship in any area of physics research, either for credit or experience."
 
   UIkit.use(Icons)
 
@@ -31,10 +29,13 @@ const BlogIndex = ({ data, location }) => {
             <h2 className="hash">#</h2>
             <h2>ABOUT ME</h2>
             <p>{ bio }</p>
+            <h3 className="uk-margin-medium-top uk-margin-small-bottom">CONTACT</h3>
+
+            <Contact />
 
             {/* Text Section */}
             <h3 className="uk-margin-medium-top uk-margin-small-bottom">RESEARCH</h3>
-            <h4 className="uk-margin-remove"><i>RA, Peter Love Quantum Information Group, Tufts University</i></h4>
+            <h4 className="uk-margin-remove"><i>Open</i></h4>
             <p className="uk-margin-remove-top uk-margin-large-bottom">{ research }</p>
           </div>
         </section>
