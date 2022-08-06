@@ -63,6 +63,11 @@ p {
   color: darkslategray;
 }
 
+.hover:hover {
+  color: #333;
+  transition: .5s ease-in-out;
+}
+
 .list-remove, .list-remove {
   list-style-type: none;
   background-color: none;

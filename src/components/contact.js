@@ -10,7 +10,7 @@ const Contact = () => {
         <span className="uk-icon soc" uk-icon="icon: github; ratio: 1.5"></span><code>@dmharrington03</code>
       </a></li>
       <li><a href="https://www.linkedin.com/in/dmharrington03/" target="_blank" rel="noopener noreferrer"><span className="uk-icon soc" uk-icon="icon: linkedin; ratio: 1.5"></span><code>@dmharrington03</code></a></li>
-      <li>
+      <li className="hover">
         <span className="uk-icon soc uk-float-left" uk-icon="icon: mail; ratio: 1.5"></span>
         <ul className="list-remove">
           <li><a href="mailto: dmharrington03@gmail.com" target="_blank" rel="noopener noreferrer" className="a-remove"><code>dmharrington03@gmail.com</code></a></li>
