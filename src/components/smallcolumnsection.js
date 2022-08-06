@@ -10,13 +10,13 @@ const SmallColumnSection = () => {
   return (
     <div>
       <ul className="uk-list uk-list-divider">
-        <li className="uk-flex">
+        <li className="uk-flex" uk-scrollspy="cls: uk-animation-fade; delay: 500">
           <StaticImage className="uk-width-1-5" src="../images/electricfields.png"/>
           <div className="uk-width-4-5 uk-flex uk-flex-center uk-flex-middle uk-padding-remove">
             <p>lorem ipsum</p>
           </div>
         </li>
-        <li className="uk-flex">
+        <li className="uk-flex" uk-scrollspy="cls: uk-animation-fade; delay: 500">
           <StaticImage className="uk-width-1-5" src="../images/electricfields.png"/>
           <div className="uk-width-4-5 uk-flex uk-flex-center uk-flex-middle uk-padding-remove">
             <p>lorem ipsum</p>

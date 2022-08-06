@@ -46,7 +46,7 @@ const SmallSection = () => {
       `}
       render={(data) => (
 
-        <div className="uk-position-relative">
+        <div className="uk-position-relative" uk-scrollspy="cls: uk-animation-fade; delay: 500">
           <div className="scroll-wrapper" id="scroll">
 
             <div className="scroll">
