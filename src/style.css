@@ -55,6 +55,14 @@ p {
   left: -2rem;
 }
 
+.soc {
+  padding-right: 10px;
+}
+
+.uk-iconnav code {
+  color: darkslategray;
+}
+
 .maintext {
   position: relative;
   display: block;
