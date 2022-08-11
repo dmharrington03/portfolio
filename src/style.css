@@ -11,6 +11,12 @@ body, h1, h2, h3, h4, h5, h6 p, a {
   font-family: 'Baskervville', Georgia, 'Times New Roman', Times, serif;
 }
 
+canvas {
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .top {
   background-color: #D9D9D9;
   height: 140px;
