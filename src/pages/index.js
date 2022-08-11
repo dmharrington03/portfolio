@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Header from "../components/header"
@@ -12,6 +12,7 @@ import Contact from "../components/contact"
 
 import UIkit from "uikit";
 import Icons from 'uikit/dist/js/uikit-icons';
+import * as tf from "@tensorflow/tfjs";
 
 const BlogIndex = ({ data, location }) => {
 
@@ -20,6 +21,9 @@ const BlogIndex = ({ data, location }) => {
   const research = "Currently, I am looking for a new assistantship/internship in any area of physics research, either for credit or experience."
 
   UIkit.use(Icons)
+
+  // const model = await tf.loadLayersModel('');
+
 
   return (
     <div>
