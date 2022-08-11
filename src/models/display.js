@@ -3,7 +3,7 @@ export default function sketch (p5) {
     let w = 28;
     let h = 28;
     let size;
-    let diameter = 0;
+    let diameter = 1;
     let pixelState = [];
 
     p5.updateWithProps = (newProps) => {
