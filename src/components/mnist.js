@@ -12,7 +12,6 @@ import sketch from "../models/display";
 const MNIST = ({ data, location }) => {
   let model;
   const [guess, setGuess] = React.useState('?');
-  // const [value, setValue] = React.useState('');
 
   (async () => {
     model = await tf.loadLayersModel('https://raw.githubusercontent.com/dmharrington03/portfolio/master/src/models/model.json');
@@ -23,9 +22,12 @@ const MNIST = ({ data, location }) => {
     let vals = tf.tensor(data.slice(1, data.length - 1).split(',').map(i => parseFloat(i)));
     let nvals = vals.reshape([28, 28]).transpose().reshape([1, 28*28]);
     let pred = model.predict(nvals);
-    tf.argMax(pred, 1).array().then(a => 
-      setGuess(a)
-    );
+    (async () => {
+      let predArr = await pred.array();
+      let result = await tf.argMax(pred, 1).array();
+      let strength = predArr;
+      setGuess(`Guess: ${result[0]} - ${Math.floor(strength[0][result] * 100)}% certainty`)
+    })();
   }
 
   return (
@@ -33,7 +35,7 @@ const MNIST = ({ data, location }) => {
       <div className="uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-height-viewport" data-uk-height-viewport="offset-bottom: 100px">
         <ReactP5Wrapper sketch={sketch} getData={getData}/>
 
-        <pre>Guess: {guess}</pre>
+        <pre>{guess}</pre>
       </div>
 
     </div>
