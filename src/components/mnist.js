@@ -34,6 +34,7 @@ const MNIST = ({ data, location }) => {
     <div>
       <div className="uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-height-viewport" data-uk-height-viewport="offset-bottom: 100px">
         <ReactP5Wrapper sketch={sketch} getData={getData}/>
+        <p className="uk-margin-remove-bottom">Press space to clear board, up/down to change pen size, enter to submit</p>
 
         <pre>{guess}</pre>
       </div>
