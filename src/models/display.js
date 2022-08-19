@@ -12,9 +12,22 @@ export default function sketch (p5) {
         }
     }
 
+    p5.windowResized = () => {
+        if (p5.windowHeight > p5.windowWidth) {
+            p5.resizeCanvas(p5.windowHeight / 3, p5.windowHeight / 3);
+        } else {
+            p5.resizeCanvas(p5.windowWidth / 3, p5.windowWidth / 3);
+        }
+    }
+
     p5.setup = () => {
-        p5.createCanvas(600, 600);
-        size = p5.width / w;
+        if (p5.windowHeight > p5.windowWidth) {
+            p5.createCanvas(p5.windowHeight / 3, p5.windowHeight / 3);
+        } else {
+            p5.createCanvas(p5.windowWidth / 3, p5.windowWidth / 3);
+        }
+
+        // size = p5.width / w;
         p5.textSize(20);
         p5.stroke(100);
         // Populate pixel array
@@ -22,6 +35,12 @@ export default function sketch (p5) {
     }
 
     p5.draw = () => {
+
+        if (p5.windowHeight > p5.windowWidth) {
+            size = (p5.windowHeight / 3) / w;
+        } else {
+            size = (p5.windowWidth / 3) / w;
+        }
 
         // Spacebar
         if (p5.keyIsDown(32)) {
