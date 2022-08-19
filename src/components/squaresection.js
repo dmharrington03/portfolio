@@ -21,6 +21,7 @@ const SquareSection = () => {
               frontmatter {
                 description
                 title
+                ghurl
               }
             }
           }
@@ -34,7 +35,8 @@ const SquareSection = () => {
               <SquareCaption
                 imgURL={imgMatch ? imgMatch.publicURL : ""}
                 title={post.frontmatter.title || 'error'}
-                description={post.html} />
+                description={post.html}
+                ghURL={post.frontmatter.ghurl} />
                 )
             })
           }
