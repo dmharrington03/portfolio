@@ -1,7 +1,9 @@
-import React from "react"
+import * as React from "react"
 import UIkit from "uikit"
 
-const SquareCaption = ({imgURL, title, description}) => {
+import ViewOnGithub from './viewongithub';
+
+const SquareCaption = ({imgURL, title, description, ghURL}) => {
 
   return (
     <div className="uk-margin-bottom">
@@ -12,8 +14,12 @@ const SquareCaption = ({imgURL, title, description}) => {
         <h4 className="uk-margin-small"><b><i>{title}</i></b></h4>
       </div>
       <div id={title.replace(/\s+/g, '')} data-uk-modal>
-        <div class="uk-modal-dialog uk-modal-body uk-width-5-6 uk-width-2-3@s" data-uk-overflow-auto>
-          <h2 class="uk-modal-title">{title}</h2>
+        <div className="uk-modal-dialog uk-modal-body uk-width-5-6 uk-width-2-3@s" data-uk-overflow-auto>
+          <div className="uk-flex uk-flex-between">
+            <h2 className="uk-modal-title uk-margin-remove">{title}</h2>
+            <ViewOnGithub url={ghURL} className=""/>
+          </div>
+
           <hr />
           <button class="uk-modal-close-default" type="button" data-uk-close></button>
           <section className="sq-caption uk-margin-bottom" 
