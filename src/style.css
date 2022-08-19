@@ -259,3 +259,14 @@ section.sq-caption p {
 .uk-modal-dialog h2, em {
   color: black;
 }
+
+a.footer-sub {
+  font-size: 14px;
+  position: relative;
+  top: 20px; 
+  color: rgba(0, 0, 0, .6);
+}
+
+a.footer-sub:hover {
+  text-decoration: none;
+}
