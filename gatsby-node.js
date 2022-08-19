@@ -110,6 +110,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
+      ghurl: String
     }
 
     type Fields {
