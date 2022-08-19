@@ -15,4 +15,4 @@ The backend of the server is built in Python with Flask/WTForms/SQLite, and the 
 
 A time is input via a time selector form element then passed to the backend. There, it is processed and stored in an SQL database. A scheduler is initiated to turn on the Raspberry Pi GPIO pin attached to the relay controlling the hot plate. The frontend can then query the API about the stored time and render a progress bar and various other pages.
 
-<img src="./screens.jpeg" alt="Five screens of frontend interface" width=800>
+<img src="./screens.png" alt="Five screens of frontend interface">
