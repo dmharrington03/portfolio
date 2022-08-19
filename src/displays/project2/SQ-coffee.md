@@ -2,6 +2,7 @@
 title: IoT Coffee Maker
 date: "2015-05-01T22:12:03.284Z"
 description: "SQ-coffee"
+ghurl: "https://github.com/dmharrington03/coffee-machine"
 ---
 
 *An automatic, IoT, chemistry-style pour-over coffee maker*
