@@ -17,6 +17,7 @@ const Header = () => {
                     <StaticImage
                         className="pic1 uk-display-block"
                         src="../images/headshot.png"
+                        placeholder="blurred"
                         alt="Profile picture"
                     />
             </div>
