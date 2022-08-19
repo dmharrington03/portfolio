@@ -37,6 +37,8 @@ const MNIST = ({ data, location }) => {
         <p className="uk-margin-remove-bottom">Press space to clear board, up/down to change pen size, enter to submit</p>
 
         <pre>{guess}</pre>
+        <p className="uk-margin-remove-top">(numbers are hard)</p>
+        <p className="uk-text-meta"><i>Mobile not currently supported</i></p>
       </div>
 
     </div>
