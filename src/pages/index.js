@@ -16,13 +16,11 @@ import * as tf from "@tensorflow/tfjs";
 
 const BlogIndex = ({ data, location }) => {
 
-  const bio = "Hello! I\'m Daniel, an undergraduate physics student at Tufts University. I am interested in pursuing condensed matter physics, specifically quantum computing theory and development, though I remain open as I continue to learn and explore. I also plan to minor in computer science and mathematics. My goal is to use computing to supplement experimental and theoretical techniques to solve novel problems in physics. Outside of science, I love jazz and weightlifting. Read more about my work here or on my Github:"
+  const bio = "Hello! I\'m Daniel, an undergraduate physics student at Tufts University. I am interested in pursuing condensed matter physics, specifically techniques relating to quantum computing theory and development, though I remain open and curious as I continue to learn and explore. I also plan to minor in computer science and mathematics. My goal is to use computing to supplement experimental and theoretical techniques to solve novel problems in physics. Outside of science, I love jazz and weightlifting. Read more about my work here or on my Github:"
 
   const research = "Currently, I am looking for a new assistantship/internship in any area of physics research, either for credit or experience."
 
   UIkit.use(Icons)
-
-  // const model = await tf.loadLayersModel('');
 
 
   return (
@@ -56,7 +54,7 @@ const BlogIndex = ({ data, location }) => {
             <SmallSection />
             <br />
 
-            <h3 className="uk-margin">p5 SIMULATIONS</h3>
+            <h3 className="uk-margin">p5.JS SIMULATIONS</h3>
             <SmallColumnSection />
             <br />
 
@@ -78,7 +76,11 @@ const BlogIndex = ({ data, location }) => {
       
       </div>
       <footer className="post-footer uk-height-small uk-flex uk-flex-center uk-flex-middle">
-        <h4 className="uk-margin-remove">DANIEL HARRINGTON</h4>
+        <div className="uk-text-center">
+          <h4 className="uk-margin-remove">DANIEL HARRINGTON</h4>
+          <a className="uk-link-text footer-sub" href="https://github.com/dmharrington03/portfolio"
+          target="_blank" rel="noreferrer">View this site's code on Github</a>
+        </div>
       </footer>
     </div>
   )
@@ -95,38 +97,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-// allMarkdownRemark(filter: {frontmatter: {title: {glob: "M-**"}}}) {
-//   nodes {
-//     id
-//     frontmatter {
-//       title
-//       description
-//     }
-//     html
-//     fields {
-//       slug
-//     }
-//   }
-// }
-// allFile(filter: {relativeDirectory: {glob: "project*"}, extension: {in: ["jpg", "png"]}}) {
-//   nodes {
-//     publicURL
-//     name
-//   }
-// }
-
-
-// allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-//   nodes {
-//     excerpt
-//     fields {
-//       slug
-//     }
-//     frontmatter {
-//       date(formatString: "MMMM DD, YYYY")
-//       title
-//       description
-//     }
-//   }
-// }
