@@ -57,7 +57,6 @@ const MediumSection = () => {
 
           <div id="mnist" data-uk-modal>
               <div class="uk-modal-dialog uk-modal-body uk-width-2-3">
-                  <h2 class="uk-modal-title"></h2>
                   <MNIST />
                   <button class="uk-modal-close-default" type="button" data-uk-close></button>
               </div>
