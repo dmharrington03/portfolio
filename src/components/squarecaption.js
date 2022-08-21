@@ -1,5 +1,4 @@
 import * as React from "react"
-import UIkit from "uikit"
 
 import ViewOnGithub from './viewongithub';
 
@@ -8,7 +7,7 @@ const SquareCaption = ({imgURL, title, description, ghURL}) => {
   return (
     <div className="uk-margin-bottom">
       <div className="uk-flex uk-flex-column uk-flex-between uk-width-1-1 pointer" 
-        data-uk-toggle={"target: " + '#' + title.replace(/\s+/g, '')}>
+        data-uk-toggle={`target: #${title.replace(/\s+/g, '')}`}>
         <img src={imgURL} alt={title} className="click-img uk-width-5-6 uk-width-1-1@s"/>
         <h4 className="uk-margin-small"><b><i>{title}</i></b></h4>
       </div>
