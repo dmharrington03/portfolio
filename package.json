@@ -8,6 +8,8 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@loadable/babel-plugin": "^5.13.2",
+    "@loadable/component": "^5.15.2",
     "@mapbox/mapbox-sdk": "^0.13.4",
     "@mapbox/node-pre-gyp": "^1.0.9",
     "@tensorflow/tfjs": "^3.19.0",
