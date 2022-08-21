@@ -1,7 +1,5 @@
 import * as React from "react"
 
-import UIkit from "uikit";
-import Icons from 'uikit/dist/js/uikit-icons';
 
 const Contact = () => {
   return (
