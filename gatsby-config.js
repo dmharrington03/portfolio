@@ -1,15 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Daniel Harrington Portfolio`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Daniel Harrington`,
+      summary: `Physics student at Tufts University`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Portfolio of projects showcasing software, experience, and skills`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -125,7 +122,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Daniel Harrington Portfolio",
           },
         ],
       },
@@ -143,8 +140,7 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/headshot.png`, // This path is relative to the root of the site.
       },
-    },
-    `gatsby-plugin-react-helmet`,
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
