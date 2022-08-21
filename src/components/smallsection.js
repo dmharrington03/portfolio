@@ -1,8 +1,5 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import { StaticQuery, graphql } from "gatsby"
-
-import UIkit from "uikit";
 
 
 const SmallSection = () => {

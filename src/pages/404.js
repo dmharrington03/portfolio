@@ -1,14 +1,11 @@
 import * as React from "react"
-import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Header from "../components/header"
 import UIkit from "uikit"
 import Icons from "uikit/dist/js/uikit-icons"
 
 const NotFoundPage = ({ data, location }) => {
-  const siteTitle = "Daniel Harrington";
   UIkit.use(Icons);
 
   return (
@@ -22,5 +19,11 @@ const NotFoundPage = ({ data, location }) => {
     </div>
   )
 }
+
+export const Head = () => {
+  return (
+    <Seo title="404 Error"/>
+  );
+};
 
 export default NotFoundPage

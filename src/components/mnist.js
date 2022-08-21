@@ -1,8 +1,5 @@
 import * as React from "react"
-import { graphql } from "gatsby"
 
-import UIkit from "uikit";
-import Icons from 'uikit/dist/js/uikit-icons';
 import * as tf from "@tensorflow/tfjs";
 import { ReactP5Wrapper } from "react-p5-wrapper";
 
