@@ -9,4 +9,4 @@ import "./src/style.css"
 
 
 // Highlighting for code blocks
-import "prismjs/themes/prism-one-dark.css"
+import "prism-themes/themes/prism-one-dark.min.css"
