@@ -1,10 +1,8 @@
 import React from "react"
-import MNIST from "./mnist";
 import UIkit from "uikit";
 import Icons from "uikit/dist/js/uikit-icons";
 
 
-// import MediumCaption from "./mediumcaption"
 import { StaticImage } from "gatsby-plugin-image"
 
 const MediumSectionSplit = () => {
