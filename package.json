@@ -1,15 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "daniel-harrington-portfolio",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Project portfolio for Daniel Harrington",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Daniel Harrington",
   "dependencies": {
-    "@loadable/babel-plugin": "^5.13.2",
-    "@loadable/component": "^5.15.2",
     "@mapbox/mapbox-sdk": "^0.13.4",
     "@mapbox/node-pre-gyp": "^1.0.9",
     "aws-sdk": "2.1087",
