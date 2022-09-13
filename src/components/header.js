@@ -14,12 +14,15 @@ const Header = () => {
             <div className="uk-flex uk-flex-middle uk-flex-column">
                 <div className="uk-width-1-1 top" ></div>
                 <h1 className="logo">DANIEL HARRINGTON</h1>
+                <div className="profile-wrapper">
                     <StaticImage
+                        imgClassName="prof"
                         className="pic1 uk-display-block"
                         src="../images/headshot.png"
                         placeholder="blurred"
                         alt="Profile picture"
                     />
+                </div>
             </div>
         </header>
     );

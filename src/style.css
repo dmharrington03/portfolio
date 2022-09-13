@@ -30,12 +30,29 @@ canvas {
   text-align: center;
   margin: 110px 0 80px 0;
 }
+
 .pic1 {
-  position: absolute;
-  top: 50px;
+  /* position: absolute; */
+  /* top: -200px; */
   width: 180px;
   height: 180px;
 }
+
+.profile-wrapper {
+  position: absolute !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-wrapper .gatsby-image-wrapper {
+  position: absolute !important;
+  top: 50px;
+}
+/* 
+.prof {
+  position: absolute !important;
+} */
 
 h2 {
   font-size: 26px;
