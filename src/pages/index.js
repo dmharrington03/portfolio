@@ -25,6 +25,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <div>
+      <Seo />
       <Header />
       <div className="uk-container uk-width-3-4 uk-width-3-5@l">
         <section>

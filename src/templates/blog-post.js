@@ -6,6 +6,7 @@ import UIkit from "uikit"
 import Icons from "uikit/dist/js/uikit-icons"
 import "katex/dist/katex.min.css"
 import katex from "katex"
+import Seo from "../components/seo"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -15,7 +16,7 @@ const BlogPostTemplate = ({ data, location }) => {
 
   return (
     <div>
-      
+      <Seo title={post.frontmatter.title} />
       <ArticleHeader post={post} imgURL={data.file ? data.file.publicURL : ""}/>
 
       <div className="uk-container uk-margin-top">
