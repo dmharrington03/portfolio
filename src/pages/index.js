@@ -16,9 +16,9 @@ import Icons from 'uikit/dist/js/uikit-icons';
 
 const BlogIndex = ({ data, location }) => {
 
-  const bio = "Hello! I'm Daniel, an undergraduate physics student at Tufts University. I am interested in pursuing condensed matter physics, specifically techniques relating to quantum computing theory and development, though I remain open and curious as I continue to learn and explore. I also plan to minor in computer science and mathematics. My goal is to use computing to supplement experimental and theoretical techniques to solve novel problems in physics. Outside of science, I love jazz and weightlifting. Read more about my work here or on my Github:"
+  const bio = "Hello! I'm Daniel, an undergraduate physics and math student at Tufts University. I am interested in pursuing the broad areas of condensed matter physics and computational mathematics. I am looking to learn more about quantum computing theory and development, as well as expand my skillset and familiarity within the discipline of physics. Outside of science, I love jazz and weightlifting. Read more about my work here or on my Github:"
 
-  const research = "Currently, I am looking for a new internship/assistantship in any area of physics research, either for credit or experience."
+  const research = "Currently, I am looking for an internship/assistantship in physics or applied math research, either for credit or experience."
 
   UIkit.use(Icons)
 
@@ -87,7 +87,8 @@ const BlogIndex = ({ data, location }) => {
         <div className="uk-text-center">
           <h4 className="uk-margin-remove">DANIEL HARRINGTON</h4>
           <a className="uk-link-text footer-sub" href="https://github.com/dmharrington03/portfolio"
-          target="_blank" rel="noreferrer">View this site's code on Github</a>
+          target="_blank" rel="noreferrer">View this site's code on Github
+          </a>
         </div>
       </footer>
     </div>
