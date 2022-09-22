@@ -38,7 +38,7 @@ const MediumSectionSplit = () => {
       </div>
       <hr className="uk-margin"/>
       {/* Coffee Machine */}
-      <div className="uk-height-expand">
+      {/* <div className="uk-height-expand">
 
         <div className="uk-flex-middle uk-grid uk-margin-large" data-uk-grid>
           <div className="uk-width-1-2@m">
@@ -59,7 +59,7 @@ const MediumSectionSplit = () => {
           </div>
 
         </div>
-      </div>
+      </div> */}
 
     </div>
   );
