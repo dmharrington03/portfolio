@@ -51,7 +51,7 @@ const MediumSectionSplit = () => {
           <div className="uk-width-expand">
             <a href="https://github.com/dmharrington03/coffee-machine" target="_blank" rel="noreferrer" className="uk-link-reset">
               <h4 className="uk-margin-small-bottom">
-                <b><i>IoT Coffee Machine</i></b>
+                <b><i>IoT Coffee Maker</i></b>
                 <span className="uk-icon" uk-icon="icon: triangle-right"></span>
               </h4>
             </a>
