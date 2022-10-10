@@ -23,7 +23,10 @@ const SmallSection = () => {
     <StaticQuery
       query={graphql`
         query images {
-          allFile(filter: {relativeDirectory: {eq: "small"}}) {
+          allFile(
+            filter: {relativeDirectory: {eq: "small"}}
+            sort: {fields: birthTime, order: DESC}
+          ) {
             nodes {
               name
               publicURL
