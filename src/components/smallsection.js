@@ -23,16 +23,16 @@ const SmallSection = () => {
     <StaticQuery
       query={graphql`
         query images {
-          allFile(
-            filter: {relativeDirectory: {eq: "small"}}
-            sort: {fields: birthTime, order: DESC}
-          ) {
+          allFile {
             nodes {
               name
               publicURL
             }
           }
-          allMarkdownRemark(filter: {fileAbsolutePath: {glob: "**/blog/**"}}) {
+          allMarkdownRemark(
+            filter: {fileAbsolutePath: {glob: "**/blog/**"}}
+            sort: {fields: frontmatter___date, order: DESC}
+          ) {
             nodes {
               frontmatter {
                 title
@@ -50,27 +50,26 @@ const SmallSection = () => {
           <div className="scroll-wrapper" id="scroll">
 
             <div className="scroll">
-              {data.allFile.nodes.map((image, index) => {
-                
-                const postMatch = data.allMarkdownRemark.nodes.find((node) => image.name === node.frontmatter.title)
-                
+              
+              {data.allMarkdownRemark.nodes.map((node, index) => {
+                const imgMatch = data.allFile.nodes.find((img) => img.name === node.frontmatter.title)
+
                 let id;
                 if (index === 0)
                   id = 'first'
                 else if (index === data.allFile.nodes.length - 1)
                   id = 'last'
-                
-                return (
-                <div className="scroll-item" id={id}>
-                  {/* Remove whitespace from slug */}
-                  <a className="page-link" href={ postMatch ? postMatch.fields.slug.replace(/\s+/g, '') : ''}>
-                    <img src={image.publicURL} className="click-img" alt={image.name}/>
-                    <h5 className="uk-margin-small">{image.name}</h5>
-                  </a>
-                </div>
-                )
 
-              })}
+                return (
+                  <div className="scroll-item" id={id}>
+                    {/* Remove whitespace from slug */}
+                    <a className="page-link" href={ node ? node.fields.slug.replace(/\s+/g, '') : ''}>
+                      <img src={imgMatch.publicURL} className="click-img" alt={imgMatch.name}/>
+                      <h5 className="uk-margin-small">{imgMatch.name}</h5>
+                    </a>
+                  </div>
+                )})
+              }
 
             </div>
 
