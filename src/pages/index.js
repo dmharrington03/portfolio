@@ -48,7 +48,7 @@ const BlogIndex = ({ data, location }) => {
           <div className="maintext uk-margin">
             <h2 className="hash">#</h2>
             <h2>MY PROJECTS</h2>
-            <h3 className="h-primary">SOFTWARE</h3>
+            {/* <h3 className="h-primary">SOFTWARE</h3> */}
             
             {/* Small Section */}
             <h3 className="uk-margin">C++/SFML SIMULATIONS</h3>
@@ -72,12 +72,12 @@ const BlogIndex = ({ data, location }) => {
             <h3 className="uk-margin-top-large">PHYSICS</h3>
             <LargeSection /> */}
 
-            <h3 className="h-primary">HARDWARE</h3>
+            {/* <h3 className="h-primary">HARDWARE</h3> */}
             
 
             {/* Medium Split Section */}
-            <h3 className="uk-margin-remove-top">ENGINEERING</h3>
-            <MediumSectionSplit />
+            {/* <h3 className="uk-margin-remove-top">ENGINEERING</h3>
+            <MediumSectionSplit /> */}
           </div>
         </section>
       
