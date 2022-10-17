@@ -9,7 +9,7 @@ import MediumSection from "../components/mediumsection"
 import SquareSection from "../components/squaresection"
 // import LargeSection from "../components/largesection"
 import Contact from "../components/contact"
-import MediumSectionSplit from "../components/mediumsectionsplit"
+// import MediumSectionSplit from "../components/mediumsectionsplit"
 
 import UIkit from "uikit";
 import Icons from 'uikit/dist/js/uikit-icons';
@@ -22,6 +22,7 @@ const BlogIndex = ({ data, location }) => {
 
   UIkit.use(Icons)
 
+  const resumeURL = data.allFile.nodes[0].publicURL || "";
 
   return (
     <div>
@@ -36,11 +37,19 @@ const BlogIndex = ({ data, location }) => {
             <h3 className="uk-margin-medium-top uk-margin-small-bottom">CONTACT</h3>
 
             <Contact />
+            <h5 className="uk-margin-remove@s uk-margin-small">
+              <a className="uk-link-text uk-icon-link" href={resumeURL}
+                target="_blank" rel="noreferrer" download>
+                <i>Resume&nbsp;</i>
+              <span className="uk-icon dl-icon" data-uk-icon="download"></span>
+              </a>
+            </h5>
 
             {/* Text Section */}
             <h3 className="uk-margin-medium-top uk-margin-small-bottom">RESEARCH</h3>
             <h4 className="uk-margin-remove"><i>Open</i></h4>
             <p className="uk-margin-remove-top uk-margin-large-bottom">{ research }</p>
+
           </div>
         </section>
 
@@ -108,6 +117,11 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allFile(filter: {base: {eq: "DanielHarrington_Resume.pdf"}}) {
+      nodes {
+        publicURL
       }
     }
   }

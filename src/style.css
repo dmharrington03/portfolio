@@ -78,6 +78,11 @@ p {
   left: -2rem;
 }
 
+.dl-icon {
+  position: absolute;
+  display: inline-block;
+}
+
 .uk-iconnav code {
   color: #666;
 }
