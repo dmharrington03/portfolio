@@ -46,9 +46,9 @@ const BlogIndex = ({ data, location }) => {
             </h5>
 
             {/* Text Section */}
-            <h3 className="uk-margin-medium-top uk-margin-small-bottom">RESEARCH</h3>
+            {/* <h3 className="uk-margin-medium-top uk-margin-small-bottom">RESEARCH</h3>
             <h4 className="uk-margin-remove"><i>Open</i></h4>
-            <p className="uk-margin-remove-top uk-margin-large-bottom">{ research }</p>
+            <p className="uk-margin-remove-top uk-margin-large-bottom">{ research }</p> */}
 
           </div>
         </section>
