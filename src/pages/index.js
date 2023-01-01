@@ -16,7 +16,7 @@ import Icons from 'uikit/dist/js/uikit-icons';
 
 const BlogIndex = ({ data, location }) => {
 
-  const bio = "Hello! I'm Daniel, an undergraduate physics and math student at Tufts University. I am interested in pursuing the broad areas of condensed matter physics and computational mathematics. I am looking to learn more about quantum computing theory and development, computper graphics, and astronomy, as well as expand my skillset and familiarity within the discipline of physics. Outside of science, I love jazz and weightlifting. Read more about my work here or on my Github:"
+  const bio = "Hello! I'm Daniel, an undergraduate physics and math student at Tufts University. I am interested in pursuing the broad areas of condensed matter physics and computational mathematics. I am looking to learn more about quantum computing theory and development, computer graphics, and astronomy, as well as expand my skillset and familiarity within the discipline of physics. Outside of science, I love jazz and weightlifting. Read more about my work here or on my Github:"
 
   const research = "Currently, I am looking for an internship/assistantship in physics or applied math research, either for credit or experience."
 
