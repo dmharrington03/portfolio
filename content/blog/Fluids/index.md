@@ -5,7 +5,9 @@ description: Fluids
 ---
 
 <div style="text-align: center; margin: 100px 0;">
-<h2><i>Work in Progress</i></h2>
+<h2><i>Bookmarked</i></h2>
 
-This project is still ongoing. Check back later for more details!
+This project has been bookmarked for completion at a later date.  
+
+I'm still really interested in fluids and CFD, so check back later for updates!
 </div>
