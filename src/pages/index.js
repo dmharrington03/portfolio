@@ -5,6 +5,7 @@ import Seo from "../components/seo"
 import Header from "../components/header"
 import SmallSection from "../components/smallsection"
 import SmallColumnSection from "../components/smallcolumnsection"
+import PythonSection from "../components/pythonsection"
 import MediumSection from "../components/mediumsection"
 import SquareSection from "../components/squaresection"
 // import LargeSection from "../components/largesection"
@@ -59,6 +60,11 @@ const BlogIndex = ({ data, location }) => {
             <h2>MY PROJECTS</h2>
             {/* <h3 className="h-primary">SOFTWARE</h3> */}
             
+            {/* Python Section */}
+            <h3 className="uk-margin">PYTHON SIMULATIONS</h3>
+            <PythonSection />
+            <br />
+
             {/* Small Section */}
             <h3 className="uk-margin">C++/SFML SIMULATIONS</h3>
             <SmallSection />
