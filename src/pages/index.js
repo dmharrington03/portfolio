@@ -60,14 +60,14 @@ const BlogIndex = ({ data, location }) => {
             <h2>MY PROJECTS</h2>
             {/* <h3 className="h-primary">SOFTWARE</h3> */}
             
-            {/* Python Section */}
-            <h3 className="uk-margin">PYTHON SIMULATIONS</h3>
-            <PythonSection />
-            <br />
-
             {/* Small Section */}
             <h3 className="uk-margin">C++/SFML SIMULATIONS</h3>
             <SmallSection />
+            <br />
+            
+            {/* Python Section */}
+            <h3 className="uk-margin">PYTHON SIMULATIONS</h3>
+            <PythonSection />
             <br />
 
             <h3 className="uk-margin">p5.JS SIMULATIONS</h3>
