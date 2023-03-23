@@ -15,7 +15,7 @@ const PythonSection = () => {
           </div>
           <div className="uk-width-expand uk-flex uk-flex-center uk-flex-middle">
             <div className="uk-margin-remove">
-              <p>EM FDTD waveguide simulations with meep. Vizualization of spatial modes and component magnitudes with matplotlib. Also explores single slit diffraction and interference patterns. </p>
+              <p>An initial exploration of EM FDTD waveguide simulations with meep. Vizualization of spatial modes and component magnitudes with matplotlib. Also explores single slit diffraction and interference patterns. </p>
               <button className="uk-button uk-visible@m" href={notebook}>
                 <a href={notebook} target="_blank" rel="noopener noreferrer" className="uk-link-text">
                   Open Notebook
