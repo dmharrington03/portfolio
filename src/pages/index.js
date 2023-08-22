@@ -100,7 +100,7 @@ const BlogIndex = ({ data, location }) => {
       </div>
       <footer className="post-footer uk-height-small uk-flex uk-flex-center uk-flex-middle">
         <div className="uk-text-center">
-          <h4 className="uk-margin-remove">DANIEL HARRINGTON</h4>
+          <h4 className="uk-margin-remove footer-name">DANIEL HARRINGTON</h4>
           <a className="uk-link-text footer-sub" href="https://github.com/dmharrington03/portfolio"
           target="_blank" rel="noreferrer">View this site's code on Github
           </a>
