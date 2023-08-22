@@ -57,6 +57,19 @@ const BlogIndex = ({ data, location }) => {
         <section>
           <div className="maintext uk-margin">
             <h2 className="hash">#</h2>
+            <h2>MY RESEARCH</h2>
+            {/* <h3 className="h-primary">SOFTWARE</h3> */}
+            <div style={{"height": 200}} className="uk-text-center uk-flex uk-flex-column uk-flex-center uk-align-center">
+              <h5>Research content goes here.</h5>
+              <h5>2D Materials, Photonic neutral atom trapping</h5>
+            </div>
+            
+          </div>
+        </section>
+
+        <section>
+          <div className="maintext uk-margin">
+            <h2 className="hash">#</h2>
             <h2>MY PROJECTS</h2>
             {/* <h3 className="h-primary">SOFTWARE</h3> */}
             
