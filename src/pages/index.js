@@ -6,6 +6,7 @@ import Header from "../components/header"
 import SmallSection from "../components/smallsection"
 import SmallColumnSection from "../components/smallcolumnsection"
 import PythonSection from "../components/pythonsection"
+import ResearchSection from "../components/researchsection"
 import MediumSection from "../components/mediumsection"
 import SquareSection from "../components/squaresection"
 // import LargeSection from "../components/largesection"
@@ -46,23 +47,20 @@ const BlogIndex = ({ data, location }) => {
               </a>
             </h5>
 
-            {/* Text Section */}
-            {/* <h3 className="uk-margin-medium-top uk-margin-small-bottom">RESEARCH</h3>
-            <h4 className="uk-margin-remove"><i>Open</i></h4>
-            <p className="uk-margin-remove-top uk-margin-large-bottom">{ research }</p> */}
-
           </div>
         </section>
 
         <section>
           <div className="maintext uk-margin">
+            
+            {/* Research Section */}
             <h2 className="hash">#</h2>
             <h2>MY RESEARCH</h2>
-            {/* <h3 className="h-primary">SOFTWARE</h3> */}
-            <div style={{"height": 200}} className="uk-text-center uk-flex uk-flex-column uk-flex-center uk-align-center">
-              <h5>Research content goes here.</h5>
-              <h5>2D Materials, Photonic neutral atom trapping</h5>
-            </div>
+
+            {/* <h3 className="uk-margin">INTEGRATED NEUTRAL ATOMS</h3> */}
+
+            <h3 className="uk-margin">2D MATERIALS</h3>
+            <ResearchSection />
             
           </div>
         </section>
