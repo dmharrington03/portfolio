@@ -6,10 +6,13 @@ import Header from "../components/header"
 import SmallSection from "../components/smallsection"
 import SmallColumnSection from "../components/smallcolumnsection"
 import PythonSection from "../components/pythonsection"
-import ResearchSection from "../components/researchsection"
+import MoS2ResearchSection from "../components/mos2researchsection"
+import PhotonicsResearchSection from "../components/photonicsresearchsection"
 import MediumSection from "../components/mediumsection"
 import SquareSection from "../components/squaresection"
 // import LargeSection from "../components/largesection"
+import "katex/dist/katex.min.css"
+import katex from "katex"
 import Contact from "../components/contact"
 // import MediumSectionSplit from "../components/mediumsectionsplit"
 
@@ -18,11 +21,14 @@ import Icons from 'uikit/dist/js/uikit-icons';
 
 const BlogIndex = ({ data, location }) => {
 
-  const bio = "Hello! I'm Daniel, an undergraduate physics and math student at Tufts University. I am interested in pursuing the broad research areas of condensed matter physics and applied optics. I am looking to learn more about quantum computing, photonics, and astronomy, as well as expand my general skillset and familiarity with the discipline of physics. Outside of science, I love jazz and weightlifting. Read more about my work here or on my Github:"
+  const bio = "Hello! I'm Daniel, an undergraduate physics and math student at Tufts University. I am interested in pursuing the broad research areas of condensed matter physics and optics. I am looking to learn more about quantum computing, photonics, and astronomy, as well as expand my general skillset and familiarity with the discipline of physics. Outside of science, I love jazz and weightlifting. Read more about my work here or on my Github:"
 
   const research = "Currently, I am looking for an internship/assistantship in physics or applied math research, either for credit or experience."
 
   UIkit.use(Icons)
+  var html = katex.renderToString("c = \\pm\\sqrt{a^2 + b^2}", {
+    throwOnError: false
+  });
 
   const resumeURL = data.allFile.nodes[0].publicURL || "";
 
@@ -58,9 +64,12 @@ const BlogIndex = ({ data, location }) => {
             <h2>MY RESEARCH</h2>
 
             {/* <h3 className="uk-margin">INTEGRATED NEUTRAL ATOMS</h3> */}
+            <h3 className="uk-margin">NANOPHOTONICS</h3>
+            <PhotonicsResearchSection />
 
             <h3 className="uk-margin">2D MATERIALS</h3>
-            <ResearchSection />
+            <MoS2ResearchSection />
+
             
           </div>
         </section>
@@ -69,7 +78,21 @@ const BlogIndex = ({ data, location }) => {
           <div className="maintext uk-margin">
             <h2 className="hash">#</h2>
             <h2>MY PROJECTS</h2>
-            {/* <h3 className="h-primary">SOFTWARE</h3> */}
+            <h4 className="h-primary">COURSEWORK</h4>
+
+            <div>
+              <h4>Variational Characteristic of the Singular Value Decomposition:</h4>
+              <div className="uk-flex uk-flex-center" dangerouslySetInnerHTML={{__html: 
+                  katex.renderToString(String.raw`
+                  \sigma_1 = \max_{\substack{
+                    v \in \mathbb{R}^n, v\ne0 \\
+                    w \in \mathbb{R}^m, w\ne0 }}
+                    \frac{\langle w, Av \rangle}{{\langle w, w \rangle}^{1/2} {\langle v, v \rangle}^{1/2}}
+                  `, {throwOnError: false, displayMode: true})
+                }}>
+                </div>
+
+            </div>
             
             {/* Small Section */}
             <h3 className="uk-margin">C++/SFML SIMULATIONS</h3>
@@ -77,9 +100,9 @@ const BlogIndex = ({ data, location }) => {
             <br />
             
             {/* Python Section */}
-            <h3 className="uk-margin">PYTHON SIMULATIONS</h3>
+            {/* <h3 className="uk-margin">PYTHON SIMULATIONS</h3>
             <PythonSection />
-            <br />
+            <br /> */}
 
             <h3 className="uk-margin">p5.JS SIMULATIONS</h3>
             <SmallColumnSection />
@@ -91,8 +114,8 @@ const BlogIndex = ({ data, location }) => {
             <MediumSection />
 
             {/* Square Section */}
-            <h3 className="uk-margin">WEB DEVELOPMENT</h3>
-            <SquareSection/>
+            {/* <h3 className="uk-margin">WEB DEVELOPMENT</h3>
+            <SquareSection/> */}
 
             {/* Large Section
             <h3 className="uk-margin-top-large">PHYSICS</h3>
