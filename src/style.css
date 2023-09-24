@@ -40,6 +40,13 @@ canvas {
   height: 180px;
 }
 
+.small-profile-wrapper {
+  position: absolute !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .profile-wrapper {
   position: absolute !important;
   width: 100%;
@@ -50,6 +57,14 @@ canvas {
 .profile-wrapper .gatsby-image-wrapper {
   position: absolute !important;
   top: 50px;
+}
+
+.small-profile-wrapper .gatsby-image-wrapper {
+  position: absolute !important;
+  top: 90px;
+  left: 12vw;
+  width: 150px;
+  height: 150px;
 }
 /* 
 .prof {
@@ -246,6 +261,14 @@ $breakpoint-xlarge: 1600px !default; */
   height: 25px;
 }
 
+.small-home-link {
+  text-decoration: underline;
+  color: black;
+  position: absolute;
+  top: 10vw;
+  left: 10px;
+}
+
 .home-link {
   text-decoration: underline;
   color: black;
@@ -254,8 +277,8 @@ $breakpoint-xlarge: 1600px !default; */
   left: 10px;
 }
 
-.home-link:hover {
-  color: black;
+.home-link:hover, .small-home-link:hover {
+  color: darkgray;
 }
 
 .git-button {
