@@ -4,6 +4,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
+  color:#161F25;
   /* background: #f9f8f4; */
 }
 
@@ -18,8 +19,9 @@ canvas {
 }
 
 .top {
-  background-color: #D9D9D9;
-  height: 140px;
+  background: url("./images/bg3.png");
+  background-size: cover;
+  height: 140px; 
 }
 
 .header {
@@ -38,7 +40,7 @@ canvas {
   height: 180px;
 }
 
-.profile-wrapper {
+.profile-wrapper, .small-profile-wrapper {
   position: absolute !important;
   width: 100%;
   display: flex;
@@ -49,6 +51,7 @@ canvas {
   position: absolute !important;
   top: 50px;
 }
+
 /* 
 .prof {
   position: absolute !important;
@@ -56,7 +59,7 @@ canvas {
 
 h2 {
   font-size: 26px;
-  color: #146490;
+  color: #161F25;
   display: inline;
 }
 
@@ -244,6 +247,14 @@ $breakpoint-xlarge: 1600px !default; */
   height: 25px;
 }
 
+.small-home-link {
+  text-decoration: underline;
+  color: black;
+  position: relative;
+  top: 145px;
+  padding: 10px;
+}
+
 .home-link {
   text-decoration: underline;
   color: black;
@@ -252,8 +263,12 @@ $breakpoint-xlarge: 1600px !default; */
   left: 10px;
 }
 
-.home-link:hover {
-  color: black;
+.border {
+  border: 1px solid red;
+}
+
+.home-link:hover, .small-home-link:hover {
+  color: darkgray;
 }
 
 .git-button {
@@ -269,7 +284,8 @@ $breakpoint-xlarge: 1600px !default; */
 }
 
 .post-footer {
-  background-color: #D9D9D9;
+  /* background-color: #D9D9D9; */
+  background-color: #161F25;
 }
 
 section.sq-caption p {
@@ -292,10 +308,14 @@ a.footer-sub {
   font-size: 14px;
   position: relative;
   top: 20px; 
-  color: rgba(0, 0, 0, .6);
+  color: rgba(255, 255, 255, .8);
   text-decoration: underline;
 }
 
 a.footer-sub:hover {
   text-decoration: none;
+}
+
+.footer-name {
+  color: rgba(255, 255, 255, .8);
 }

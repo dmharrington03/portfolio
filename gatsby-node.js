@@ -7,6 +7,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
 
+  // Research Pages:
+  const mos2Page = path.resolve('./src/pages/mos2.js')
+
+  createPage({
+    path: "/2dmaterials",
+    component: mos2Page,
+    context: {
+    },
+  })
+
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
