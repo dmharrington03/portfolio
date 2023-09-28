@@ -40,14 +40,7 @@ canvas {
   height: 180px;
 }
 
-.small-profile-wrapper {
-  position: absolute !important;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.profile-wrapper {
+.profile-wrapper, .small-profile-wrapper {
   position: absolute !important;
   width: 100%;
   display: flex;
@@ -59,13 +52,6 @@ canvas {
   top: 50px;
 }
 
-.small-profile-wrapper .gatsby-image-wrapper {
-  position: absolute !important;
-  top: 90px;
-  left: 12vw;
-  width: 150px;
-  height: 150px;
-}
 /* 
 .prof {
   position: absolute !important;
@@ -264,9 +250,9 @@ $breakpoint-xlarge: 1600px !default; */
 .small-home-link {
   text-decoration: underline;
   color: black;
-  position: absolute;
-  top: 10vw;
-  left: 10px;
+  position: relative;
+  top: 145px;
+  padding: 10px;
 }
 
 .home-link {
@@ -275,6 +261,10 @@ $breakpoint-xlarge: 1600px !default; */
   position: relative;
   top: 10px;
   left: 10px;
+}
+
+.border {
+  border: 1px solid red;
 }
 
 .home-link:hover, .small-home-link:hover {

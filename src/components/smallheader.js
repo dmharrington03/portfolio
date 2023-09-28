@@ -12,10 +12,12 @@ const SmallHeader = ({title}) => {
     return (
         <header className="header">
             <div className="uk-flex uk-flex-middle uk-flex-column">
-            <div className="uk-width-1-1 top" ></div>
+            <div className="uk-width-1-1 top" >
+
             <a className="small-home-link" href="/">Back to Home</a>
-                <h1 className="logo uk-margin-remove uk-padding-large uk-margin@s">{title}</h1>
-                <div className="small-profile-wrapper">
+            </div>
+                <h1 className="logo uk-margin-small-bottom uk-padding-small uk-margin@s">{title}</h1>
+                <div className="profile-wrapper">
                     <StaticImage
                         imgClassName="prof"
                         className="pic1 uk-display-block"
