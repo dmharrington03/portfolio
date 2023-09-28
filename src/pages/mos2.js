@@ -43,39 +43,43 @@ const MoS2Research = ({ data, location }) => {
             <p className="uk-text-justify">{ abstract2 }</p>
             <p className="uk-text-justify uk-margin-small">{ abstract3 }</p>
 
-            <div className="uk-grid uk-margin-large">
-              <figure>
-                <StaticImage width={300} height={300}
-                  className="uk-padding"
-                  src={"../images/mos2/devicebw.png"}/>
-                  <figcaption className="uk-padding-small uk-padding-remove-left">
-                    <i>MoS2 FET Device</i>
-                  </figcaption>
-              </figure>
-              <figure>
-                <StaticImage width={300} height={300}
-                  className="uk-padding"
-                  src={"../images/mos2/device_growth.png"}/>
-                  <figcaption className="uk-padding-small uk-padding-remove-left">
-                    <i>Partially Grown MoS2 PL</i>
-                  </figcaption>
-              </figure>
-              <figure>
-                <StaticImage width={300} height={300}
-                  className="uk-padding"
-                  src={"../images/mos2/trfe_pl.png"}/>
-                  <figcaption className="uk-padding-small uk-padding-remove-left">
-                    <i>P(VDF-TrFE) Coated MoS2 PL</i>
-                  </figcaption>
-              </figure>
-              <figure>
-                <StaticImage width={300} height={300}
-                  className="uk-padding"
-                  src={"../images/mos2/trts_data.png"}/>
-                  <figcaption className="uk-padding-small uk-padding-remove-left">
-                    <i>Time-Resolved THz Spectroscopy</i>
-                  </figcaption>
-              </figure>
+            <div className="uk-grid uk-margin-top">
+              <div className="uk-grid-row-small">
+                <figure className="uk-margin-small-right">
+                  <StaticImage width={200} height={200}
+                    className="uk-padding"
+                    src={"../images/mos2/devicebw.png"}/>
+                    <figcaption className="uk-padding-small uk-padding-remove-left">
+                      <i>MoS2 FET Device</i>
+                    </figcaption>
+                </figure>
+                <figure className="uk-margin-small">
+                  <StaticImage width={200} height={200}
+                    className="uk-padding"
+                    src={"../images/mos2/device_growth.png"}/>
+                    <figcaption className="uk-padding-small uk-padding-remove-left">
+                      <i>Partially Grown MoS2 PL</i>
+                    </figcaption>
+                </figure>
+              </div>
+              <div className="uk-grid-row-small">
+                <figure className="uk-margin-small">
+                  <StaticImage width={200} height={200}
+                    className="uk-padding"
+                    src={"../images/mos2/trfe_pl.png"}/>
+                    <figcaption className="uk-padding-small uk-padding-remove-left">
+                      <i>P(VDF-TrFE) Coated MoS2 PL</i>
+                    </figcaption>
+                </figure>
+                <figure className="uk-margin-small">
+                  <StaticImage width={200} height={200}
+                    className="uk-padding"
+                    src={"../images/mos2/trts_data.png"}/>
+                    <figcaption className="uk-padding-small uk-padding-remove-left">
+                      <i>Time-Resolved THz Spectroscopy</i>
+                    </figcaption>
+                </figure>
+              </div>
             </div>
 
             <h5 className="uk-margin-remove@s uk-margin-small">
