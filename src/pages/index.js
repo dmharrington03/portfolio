@@ -80,7 +80,8 @@ const BlogIndex = ({ data, location }) => {
             <h2>MY PROJECTS</h2>
             <h4 className="h-primary">COURSEWORK</h4>
 
-            <div>
+            {/* SVD Section */}
+            {/* <div>
               <h4>Variational Characteristic of the Singular Value Decomposition:</h4>
               <div className="uk-flex uk-flex-center" dangerouslySetInnerHTML={{__html: 
                   katex.renderToString(String.raw`
@@ -92,7 +93,7 @@ const BlogIndex = ({ data, location }) => {
                 }}>
                 </div>
 
-            </div>
+            </div> */}
             
             {/* Small Section */}
             <h3 className="uk-margin">C++/SFML SIMULATIONS</h3>
