@@ -78,7 +78,7 @@ const BlogIndex = ({ data, location }) => {
           <div className="maintext uk-margin">
             <h2 className="hash">#</h2>
             <h2>MY PROJECTS</h2>
-            <h4 className="h-primary">COURSEWORK</h4>
+            {/* <h4 className="h-primary">COURSEWORK</h4> */}
 
             {/* SVD Section */}
             {/* <div>

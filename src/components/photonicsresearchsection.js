@@ -17,14 +17,14 @@ const PhotonicsResearchSection = () => {
                 Quantum interference has been shown between transverse spatial modes in an integrated waveguide, but these states cannot be transformed or read out easily. By multiplexing modes in a multimode waveguide and altering mode distribution through phase modulation, the field distribution inside the waveguide can be controlled, allowing for more precise control over states.
               </p>
               {/* TODO fix link and create page */}
-              <button className="uk-button uk-visible@m" href={"/2dmaterials"}>
+              {/* <button className="uk-button uk-visible@m" href={"/2dmaterials"}>
                 <a href={"/2dmaterials"} rel="noopener noreferrer" className="uk-link-text">
                   Read More
                 </a>
               </button>
               <a href={""} target="_blank" rel="noopener noreferrer" className="uk-hidden@m uk-link-text">
                Read More<span className="uk-icon" uk-icon="icon: triangle-right"></span>
-              </a>
+              </a> */}
             </div>
             
 
