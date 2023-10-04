@@ -14,7 +14,7 @@ const PhotonicsResearchSection = () => {
           <div className="uk-width-expand uk-flex uk-flex-center uk-flex-middle">
             <div className="uk-margin-remove">
               <p>
-                Quantum interference has been shown between transverse spatial modes in an integrated waveguide, but these states cannot be transformed or read out easily. By multiplexing modes in a multimode waveguide and altering mode distribution through phase modulation, the field distribution inside the waveguide can be controlled, allowing for more precise control over states.
+                Transverse spatial modes realize another degree of freedom in integrated photonic systems. Exploiting these modes has led to promising applications in light shaping and quantum information. I am interested in manipulating the superposition of modes in a waveguide to create arbitrary field distributions for applications in single-photon emitter control.
               </p>
               {/* TODO fix link and create page */}
               {/* <button className="uk-button uk-visible@m" href={"/2dmaterials"}>
