@@ -9,7 +9,7 @@ const PhotonicsResearchSection = () => {
       <ul className="uk-list uk-padding-remove">
         <li className="uk-flex-middle uk-grid" uk-scrollspy="cls: uk-animation-fade; delay: 100" data-uk-grid>
           <div className="uk-width-2-5@m uk-width-1-2@s uk-width-1-1 uk-flex uk-flex-middle">
-            <StaticImage width={500} height={300} src="../images/meep/modes1.png"/>
+            <StaticImage width={500} height={300} src="../images/hpos_00011.jpg"/>
           </div>
           <div className="uk-width-expand uk-flex uk-flex-center uk-flex-middle">
             <div className="uk-margin-remove">
