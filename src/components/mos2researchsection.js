@@ -14,18 +14,18 @@ const MoS2ResearchSection = () => {
           <div className="uk-width-expand uk-flex uk-flex-center uk-flex-middle">
             <div className="uk-margin-remove">
               <p>
-              Molybdenum disulfide (MoS2) is a promising 2D material which in its monolayer structure is a direct bandgap semiconductor. It has a high optical absorption and good mobility for its thickness, making it
-              appealing for nanoscale photodetection applications. My work included investigating the passivation effects of various polymers on the performance of FET MoS2 photodetectors.
+              Molybdenum disulfide (MoS2) is a promising 2D material which in its monolayer structure is a direct bandgap semiconductor. It has a high optical absorption and mobility for its thickness, making it
+              appealing for nanoscale photodetection applications. My work included investigating the passivation effects of various polymers on charge dynamics in MoS2 to evaluate potential performance of FET MoS2 photodetectors. <i>Publication under review</i>
               </p>
-              {/* TODO fix link and create page */}
-              <button className="uk-button uk-visible@m" href={"/2dmaterials"}>
+              <p></p>
+              {/* <button className="uk-button uk-visible@m" href={"/2dmaterials"}>
                 <a href={"/2dmaterials"} rel="noopener noreferrer" className="uk-link-text">
                   Read More
                 </a>
-              </button>
-              <a href={""} target="_blank" rel="noopener noreferrer" className="uk-hidden@m uk-link-text">
+              </button> */}
+              {/* <a href={""} target="_blank" rel="noopener noreferrer" className="uk-hidden@m uk-link-text">
                Read More<span className="uk-icon" uk-icon="icon: triangle-right"></span>
-              </a>
+              </a> */}
             </div>
             
 
