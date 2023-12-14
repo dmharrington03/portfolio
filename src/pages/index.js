@@ -8,6 +8,7 @@ import SmallColumnSection from "../components/smallcolumnsection"
 import PythonSection from "../components/pythonsection"
 import MoS2ResearchSection from "../components/mos2researchsection"
 import PhotonicsResearchSection from "../components/photonicsresearchsection"
+import QSTResearchSection from "../components/qstresearchsection"
 import MediumSection from "../components/mediumsection"
 import SquareSection from "../components/squaresection"
 // import LargeSection from "../components/largesection"
@@ -66,6 +67,9 @@ const BlogIndex = ({ data, location }) => {
             {/* <h3 className="uk-margin">INTEGRATED NEUTRAL ATOMS</h3> */}
             <h3 className="uk-margin">NANOPHOTONICS</h3>
             <PhotonicsResearchSection />
+
+            <h3 className="uk-margin">QUANTUM STATE TOMOGRAPHY</h3>
+            <QSTResearchSection />
 
             <h3 className="uk-margin">2D MATERIALS</h3>
             <MoS2ResearchSection />
