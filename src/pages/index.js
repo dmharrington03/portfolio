@@ -22,7 +22,7 @@ import Icons from 'uikit/dist/js/uikit-icons';
 
 const BlogIndex = ({ data, location }) => {
 
-  const bio = "Hello! I'm Daniel, an undergraduate physics and math student at Tufts University. I'm interested in the broad areas of condensed matter and atomic/optical physics. I am looking to learn more about quantum computing, photonics, and ultracold atoms, as well as expand my general skillset and familiarity with physics. Outside of science, I love jazz and weightlifting. Read more about my work here or on my Github:"
+  const bio = "Hello! I'm Daniel, an undergraduate physics and math student at Tufts University. I'm interested in the broad areas of atomic/optical physics and quantum information science. I am looking to learn more about quantum computing, photonics, and ultracold atoms, as well as expand my general skillset and familiarity with physics. Outside of science, I love jazz and weightlifting. Read more about my work here or on my Github:"
 
   const research = "Currently, I am looking for an internship/assistantship in physics or applied math research, either for credit or experience."
 
@@ -34,7 +34,7 @@ const BlogIndex = ({ data, location }) => {
   const resumeURL = data.allFile.nodes[0].publicURL || "";
 
   return (
-    <div>
+    <div className="content uk-flex-1">
       <Seo />
       <Header />
       <div className="uk-container uk-width-3-4 uk-width-3-5@l">
@@ -115,8 +115,8 @@ const BlogIndex = ({ data, location }) => {
 
 
             {/* Medium Caption Section */}
-            <h3 className="uk-margin">DATA SCIENCE</h3>
-            <MediumSection />
+            {/* <h3 className="uk-margin">DATA SCIENCE</h3>
+            <MediumSection /> */ }
 
             {/* Square Section */}
             {/* <h3 className="uk-margin">WEB DEVELOPMENT</h3>
