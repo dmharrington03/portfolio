@@ -15,7 +15,7 @@ const MoS2ResearchSection = () => {
             <div className="uk-margin-remove">
               <p>
               Molybdenum disulfide (MoS2) is a promising 2D material which in its monolayer structure is a direct bandgap semiconductor. It has a high optical absorption and mobility for its thickness, making it
-              appealing for nanoscale photodetection applications. My work included investigating the passivation effects of various polymers on charge dynamics in MoS2 to evaluate potential performance of FET MoS2 photodetectors. <i>Publication under review</i>
+              appealing for nanoscale photodetection applications. My work included investigating the passivation effects of various polymers on charge dynamics in MoS2 to evaluate potential performance of FET MoS2 photodetectors. <a target="_blank" rel="noopener noreferrer" href="https://pubs.aip.org/aip/apl/article/124/1/012106/2932300"><i> Appl. Phys. Lett.</i> 124, 012106 (2024).</a>
               </p>
               <p></p>
               {/* <button className="uk-button uk-visible@m" href={"/2dmaterials"}>
